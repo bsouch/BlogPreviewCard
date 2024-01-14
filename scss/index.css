@@ -15,7 +15,7 @@ main .card {
   box-shadow: 5px 5px;
   padding: 16px;
   background-color: hsl(0deg, 0%, 100%);
-  max-width: 220px;
+  max-width: 200px;
   gap: 16px;
 }
 main .card span {
@@ -39,7 +39,7 @@ main .card .tagPublishContainer .tagContainer {
 }
 main .card .tagPublishContainer .tagContainer .tag {
   font-size: 0.625rem;
-  font-weight: 600;
+  font-weight: 800;
 }
 main .card .tagPublishContainer .publishDate {
   font-size: 0.625rem;
@@ -49,7 +49,21 @@ main .card .subHeading {
 }
 main .card .cardParagraph {
   font-size: 0.625rem;
+  font-weight: 600;
   color: hsl(0deg, 0%, 50%);
+  line-height: 15px;
+}
+main .card .publisherRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+main .card .publisherRow .publisherImage {
+  width: 30px;
+}
+main .card .publisherRow .publisherName {
+  font-weight: 800;
 }
 
 /*# sourceMappingURL=index.css.map */

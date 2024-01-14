@@ -12,7 +12,7 @@ main {
         @include borderWithShadow;
         padding: $spacing-standard;
         background-color: $colour-neutral-white;
-        max-width: 220px;
+        max-width: 200px;
         gap: $spacing-standard;
 
         span {
@@ -36,7 +36,7 @@ main {
 
                 .tag {
                     font-size: $font-size-sm;
-                    font-weight: $font-weight-600;
+                    font-weight: $font-weight-800;
                 }
             }
 
@@ -51,7 +51,23 @@ main {
 
         .cardParagraph {
             font-size: $font-size-sm;
+            font-weight: $font-weight-600;
             color: $colour-neutral-grey;
+            line-height: $font-line-height-lg;
+        }
+
+        .publisherRow {
+            @include displayFlexRow;
+            align-items: center;
+            gap: $spacing-medium;
+
+            .publisherImage {
+                width: 30px;
+            }
+
+            .publisherName {
+                font-weight: $font-weight-800;
+            }
         }
     }
 }
