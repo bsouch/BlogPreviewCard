@@ -44,5 +44,8 @@ main .card .tagPublishContainer .tagContainer .tag {
 main .card .tagPublishContainer .publishDate {
   font-size: 0.625rem;
 }
+main .card .subHeading {
+  font-weight: 800;
+}
 
 /*# sourceMappingURL=index.css.map */
