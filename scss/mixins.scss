@@ -1,0 +1,19 @@
+@import "./variables.scss";
+
+@mixin positionCentralAbsolute {
+    position: absolute;
+    top: $position-half;
+    left: $position-half;
+    transform: translate($position-half-negative, $position-half-negative);
+}
+
+@mixin displayFlexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin borderWithShadow {
+    border: $border-standard;
+    border-radius: $border-radius-standard;
+    box-shadow: $box-shadow-size $box-shadow-size;
+}

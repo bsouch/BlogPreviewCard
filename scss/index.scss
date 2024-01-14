@@ -1,0 +1,16 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+main {
+    min-block-size: $size-full;
+    background-color: $colour-primary-yellow;
+    position: relative;
+
+    .card {
+        @include positionCentralAbsolute;
+        @include displayFlexColumn;
+        @include borderWithShadow;
+        padding: $spacing-padding-sm;
+        background-color: $colour-neutral-white;
+    }
+}
