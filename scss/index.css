@@ -17,5 +17,8 @@ main .card {
   background-color: hsl(0deg, 0%, 100%);
   max-width: 220px;
 }
+main .card .learningIcon {
+  border-radius: 8px;
+}
 
 /*# sourceMappingURL=index.css.map */

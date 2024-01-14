@@ -13,5 +13,11 @@ main {
         padding: $spacing-padding-sm;
         background-color: $colour-neutral-white;
         max-width: 220px;
+
+        .learningIcon {
+            border-radius: $border-radius-sm;
+        }
+
+
     }
 }
