@@ -12,5 +12,6 @@ main {
         @include borderWithShadow;
         padding: $spacing-padding-sm;
         background-color: $colour-neutral-white;
+        max-width: 220px;
     }
 }
