@@ -1,0 +1,85 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+main {
+    min-block-size: $size-full;
+    background-color: $colour-primary-yellow;
+    display: grid;
+    place-content: center;
+
+    .card {
+
+        @include displayFlexColumn;
+        @include borderWithShadow;
+        padding: $spacing-standard;
+        background-color: $colour-neutral-white;
+        max-width: $size-card-width;
+        gap: $spacing-standard;
+
+        &:hover {
+            box-shadow: $box-shadow-hover-size $box-shadow-hover-size;
+        }
+
+        span {
+            font-family: $font-family;
+        }
+
+        .learningIcon {
+            border-radius: $border-radius-sm;
+        }
+
+        .tagPublishContainer {
+            @include displayFlexColumn;
+            gap: $spacing-medium;
+
+            .tagContainer {
+                @include displayFlexRow;
+                width: fit-content;
+                padding: 5px 8px;
+                background-color: $colour-primary-yellow;
+                border-radius: $border-radius-xsm;
+
+                .tag {
+                    font-size: $font-size-sm;
+                    font-weight: $font-weight-800;
+                }
+            }
+
+            .publishDate {
+                font-size: $font-size-sm;
+                font-weight: $font-weight-600;
+            }
+        }
+
+        .subHeading {
+            font-weight: $font-weight-800;
+
+            &:hover {
+                color: $colour-primary-yellow;
+                cursor: pointer;
+            }
+        }
+
+        .cardParagraph {
+            font-size: $font-size-sm;
+            font-weight: $font-weight-600;
+            color: $colour-neutral-grey;
+            line-height: $font-line-height-lg;
+        }
+
+        .publisherRow {
+            @include displayFlexRow;
+            align-items: center;
+            gap: $spacing-medium;
+
+            .publisherImage {
+                width: 20px;
+            }
+
+            .publisherName {
+                font-weight: $font-weight-800;
+                font-size: $font-size-sm;
+            }
+        }
+    }
+}

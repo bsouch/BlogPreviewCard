@@ -1,3 +1,75 @@
-
+main {
+  min-block-size: 100dvb;
+  background-color: hsl(47deg, 88%, 63%);
+  display: grid;
+  place-content: center;
+}
+main .card {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px hsl(0deg, 0%, 7%);
+  border-radius: 12px;
+  box-shadow: 5px 5px;
+  padding: 16px;
+  background-color: hsl(0deg, 0%, 100%);
+  max-width: 210px;
+  gap: 16px;
+}
+main .card:hover {
+  box-shadow: 10px 10px;
+}
+main .card span {
+  font-family: "Figtree";
+}
+main .card .learningIcon {
+  border-radius: 8px;
+}
+main .card .tagPublishContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main .card .tagPublishContainer .tagContainer {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  padding: 5px 8px;
+  background-color: hsl(47deg, 88%, 63%);
+  border-radius: 5px;
+}
+main .card .tagPublishContainer .tagContainer .tag {
+  font-size: 0.625rem;
+  font-weight: 800;
+}
+main .card .tagPublishContainer .publishDate {
+  font-size: 0.625rem;
+  font-weight: 600;
+}
+main .card .subHeading {
+  font-weight: 800;
+}
+main .card .subHeading:hover {
+  color: hsl(47deg, 88%, 63%);
+  cursor: pointer;
+}
+main .card .cardParagraph {
+  font-size: 0.625rem;
+  font-weight: 600;
+  color: hsl(0deg, 0%, 50%);
+  line-height: 15px;
+}
+main .card .publisherRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+main .card .publisherRow .publisherImage {
+  width: 20px;
+}
+main .card .publisherRow .publisherName {
+  font-weight: 800;
+  font-size: 0.625rem;
+}
 
 /*# sourceMappingURL=index.css.map */

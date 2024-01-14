@@ -1,0 +1,17 @@
+@import "./variables.scss";
+
+@mixin displayFlexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin displayFlexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin borderWithShadow {
+    border: $border-standard;
+    border-radius: $border-radius-standard;
+    box-shadow: $box-shadow-size $box-shadow-size;
+}
