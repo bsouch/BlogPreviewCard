@@ -7,6 +7,7 @@ $colour-neutral-grey: hsl(0, 0%, 50%);
 $colour-neutral-black: hsl(0, 0%, 7%);
 
 $font-size-paragraph: 1rem;
+$font-size-sm: 0.625rem;
 $font-family: "Figtree";
 $font-weight-600: 600;
 $font-weight-800: 800;
@@ -16,10 +17,12 @@ $size-full: 100dvb;
 $position-half: 50%;
 $position-half-negative: -50%;
 
-$spacing-padding-sm: 10px;
+$spacing-standard: 16px;
+$spacing-medium: 10px;
 
 $border-radius-standard: 12px;
 $border-radius-sm: 8px;
+$border-radius-xsm: 5px;
 $border-standard: solid 1px $colour-neutral-black;
 
 $box-shadow-size: 5px;

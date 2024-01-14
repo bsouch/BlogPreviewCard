@@ -10,12 +10,32 @@ main {
         @include positionCentralAbsolute;
         @include displayFlexColumn;
         @include borderWithShadow;
-        padding: $spacing-padding-sm;
+        padding: $spacing-standard;
         background-color: $colour-neutral-white;
         max-width: 220px;
+        gap: $spacing-standard;
 
         .learningIcon {
             border-radius: $border-radius-sm;
+        }
+
+        .tagPublishContainer {
+            @include displayFlexColumn;
+            gap: $spacing-medium;
+
+            .tagContainer {
+                @include displayFlexRow;
+                width: fit-content;
+                padding: 5px 8px;
+                background-color: $colour-primary-yellow;
+                border-radius: $border-radius-xsm;
+
+                .tag {
+                    font-family: $font-family;
+                    font-size: $font-size-sm;
+                    font-weight: $font-weight-600;
+                }
+            }
         }
 
 
