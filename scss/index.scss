@@ -15,6 +15,10 @@ main {
         max-width: 220px;
         gap: $spacing-standard;
 
+        span {
+            font-family: $font-family;
+        }
+
         .learningIcon {
             border-radius: $border-radius-sm;
         }
@@ -31,10 +35,13 @@ main {
                 border-radius: $border-radius-xsm;
 
                 .tag {
-                    font-family: $font-family;
                     font-size: $font-size-sm;
                     font-weight: $font-weight-600;
                 }
+            }
+
+            .publishDate {
+                font-size: $font-size-sm;
             }
         }
 

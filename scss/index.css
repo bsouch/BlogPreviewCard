@@ -18,6 +18,9 @@ main .card {
   max-width: 220px;
   gap: 16px;
 }
+main .card span {
+  font-family: "Figtree";
+}
 main .card .learningIcon {
   border-radius: 8px;
 }
@@ -35,9 +38,11 @@ main .card .tagPublishContainer .tagContainer {
   border-radius: 5px;
 }
 main .card .tagPublishContainer .tagContainer .tag {
-  font-family: "Figtree";
   font-size: 0.625rem;
   font-weight: 600;
+}
+main .card .tagPublishContainer .publishDate {
+  font-size: 0.625rem;
 }
 
 /*# sourceMappingURL=index.css.map */
