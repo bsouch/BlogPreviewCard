@@ -48,5 +48,10 @@ main {
         .subHeading {
             font-weight: $font-weight-800;
         }
+
+        .cardParagraph {
+            font-size: $font-size-sm;
+            color: $colour-neutral-grey;
+        }
     }
 }
