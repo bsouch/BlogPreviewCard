@@ -1,13 +1,10 @@
 main {
   min-block-size: 100dvb;
   background-color: hsl(47deg, 88%, 63%);
-  position: relative;
+  display: grid;
+  place-content: center;
 }
 main .card {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
   border: solid 1px hsl(0deg, 0%, 7%);
@@ -15,8 +12,11 @@ main .card {
   box-shadow: 5px 5px;
   padding: 16px;
   background-color: hsl(0deg, 0%, 100%);
-  max-width: 200px;
+  max-width: 210px;
   gap: 16px;
+}
+main .card:hover {
+  box-shadow: 10px 10px;
 }
 main .card span {
   font-family: "Figtree";
@@ -43,9 +43,14 @@ main .card .tagPublishContainer .tagContainer .tag {
 }
 main .card .tagPublishContainer .publishDate {
   font-size: 0.625rem;
+  font-weight: 600;
 }
 main .card .subHeading {
   font-weight: 800;
+}
+main .card .subHeading:hover {
+  color: hsl(47deg, 88%, 63%);
+  cursor: pointer;
 }
 main .card .cardParagraph {
   font-size: 0.625rem;
@@ -60,10 +65,11 @@ main .card .publisherRow {
   gap: 10px;
 }
 main .card .publisherRow .publisherImage {
-  width: 30px;
+  width: 20px;
 }
 main .card .publisherRow .publisherName {
   font-weight: 800;
+  font-size: 0.625rem;
 }
 
 /*# sourceMappingURL=index.css.map */

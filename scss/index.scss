@@ -4,16 +4,21 @@
 main {
     min-block-size: $size-full;
     background-color: $colour-primary-yellow;
-    position: relative;
+    display: grid;
+    place-content: center;
 
     .card {
-        @include positionCentralAbsolute;
+
         @include displayFlexColumn;
         @include borderWithShadow;
         padding: $spacing-standard;
         background-color: $colour-neutral-white;
-        max-width: 200px;
+        max-width: $size-card-width;
         gap: $spacing-standard;
+
+        &:hover {
+            box-shadow: $box-shadow-hover-size $box-shadow-hover-size;
+        }
 
         span {
             font-family: $font-family;
@@ -42,11 +47,17 @@ main {
 
             .publishDate {
                 font-size: $font-size-sm;
+                font-weight: $font-weight-600;
             }
         }
 
         .subHeading {
             font-weight: $font-weight-800;
+
+            &:hover {
+                color: $colour-primary-yellow;
+                cursor: pointer;
+            }
         }
 
         .cardParagraph {
@@ -62,11 +73,12 @@ main {
             gap: $spacing-medium;
 
             .publisherImage {
-                width: 30px;
+                width: 20px;
             }
 
             .publisherName {
                 font-weight: $font-weight-800;
+                font-size: $font-size-sm;
             }
         }
     }
